@@ -4,25 +4,15 @@
   <Repository>getmeili/meilisearch:latest</Repository>
   <Registry>https://registry.hub.docker.com/r/getmeili/meilisearch</Registry>
   <Network>bridge</Network>
-  <MyIP/>
-  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/forum/94-support/</Support>
   <Project>https://github.com/meilisearch/meilisearch</Project>
   <Overview>An open-source, fast, and hyper-relevant search engine that fits effortlessly into your projects.</Overview>
   <Category>Tools:</Category>
-  <WebUI/>
-  <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Collectathon/icons/main/meilisearch.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1715402365</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <Requires/>
   <Config Name="Port" Target="7700" Default="7700" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">7700</Config>
+  <Config Name="Appdata" Target="/meili_data" Default="/mnt/user/appdata/meilisearch" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/meilisearch</Config>
   <Config Name="Master Key" Target="MEILI_MASTER_KEY" Default="MASTER_KEY" Mode="" Description="Password required to query meilisearch" Type="Variable" Display="always" Required="false" Mask="true">masterykeymasterkeymasterkey</Config>
-  <Config Name="Appdata" Target="/meili_data" Default="/mnt/user/appdata/meilisearch" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/meilisearch</Config>
   <Config Name="Analytics" Target="MEILI_NO_ANALYTICS" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
 </Container>
