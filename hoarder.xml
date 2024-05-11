@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>hoarder</Name>
+  <Repository>ghcr.io/mohamedbassem/hoarder-web:release</Repository>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Project>https://github.com/MohamedBassem/hoarder-app</Project>
+  <Overview>A self-hostable bookmark-everything app with a touch of AI for the data hoarders out there.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <Icon>https://raw.githubusercontent.com/Collectathon/icons/main/hoarder.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Requires>redis&#xD;
+meilisearch&#xD;
+hoarder-workers</Requires>
+  <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3003</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/hoarder" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/hoarder</Config>
+  <Config Name="DATA_DIR" Target="DATA_DIR" Default="/data" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data</Config>
+  <Config Name="NEXTAUTH_URL" Target="NEXTAUTH_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://hoarder:3000</Config>
+  <Config Name="NEXTAUTH_SECRET" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">v_CfkVwhqWM3d63npf4kojAP9qjsTQDflFjOQuI-GvE</Config>
+  <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="redis" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">redis</Config>
+  <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">6379</Config>
+  <Config Name="MEILI_ADDR" Target="MEILI_ADDR" Default="meilisearch" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">meilisearch</Config>
+  <Config Name="MEILI_MASTER_KEY" Target="MEILI_MASTER_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">v_CfkVwhqWM3d63npf4kojAP9qjsTQDflFjOQuI-GvE</Config>
+  <Config Name="DISABLE_SIGNUPS" Target="DISABLE_SIGNUPS" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
