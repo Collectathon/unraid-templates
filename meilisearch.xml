@@ -9,7 +9,7 @@
   <Project>https://github.com/meilisearch/meilisearch</Project>
   <Overview>An open-source, fast, and hyper-relevant search engine that fits effortlessly into your projects.</Overview>
   <Category>Tools:</Category>
-  <Icon>https://raw.githubusercontent.com/Collectathon/icons/main/meilisearch.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/main/icons/meilisearch.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <Config Name="Port" Target="7700" Default="7700" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">7700</Config>
   <Config Name="Appdata" Target="/meili_data" Default="/mnt/user/appdata/meilisearch" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/meilisearch</Config>
