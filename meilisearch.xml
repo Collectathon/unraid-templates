@@ -5,7 +5,7 @@
   <Registry>https://registry.hub.docker.com/r/getmeili/meilisearch</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/forum/94-support/</Support>
+  <Support>https://forums.unraid.net/topic/164847-support-collectathon-meilisearch/</Support>
   <Project>https://github.com/meilisearch/meilisearch</Project>
   <Overview>An open-source, fast, and hyper-relevant search engine that fits effortlessly into your projects.</Overview>
   <Category>Tools:</Category>
