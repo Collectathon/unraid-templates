@@ -13,7 +13,7 @@
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <Config Name="Port" Target="7700" Default="7700" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">7700</Config>
   <Config Name="AppData" Target="/meili_data" Default="/mnt/user/appdata/meilisearch" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/meilisearch</Config>
-  <Config Name="Master Key" Target="MEILI_MASTER_KEY" Default="MASTER_KEY" Mode="" Description="Password required to query meilisearch" Type="Variable" Display="always" Required="false" Mask="true">masterykeymasterkeymasterkey</Config>
+  <Config Name="Master Key" Target="MEILI_MASTER_KEY" Default="masterykeymasterkeymasterkeymasterkey" Mode="" Description="Password required to query meilisearch" Type="Variable" Display="always" Required="false" Mask="true">masterykeymasterkeymasterkeymasterkey</Config>
   <Config Name="Disable Analytics" Target="MEILI_NO_ANALYTICS" Default="false|true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
   <Config Name="Environment" Target="MEILI_ENV" Default="production" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">production</Config>
 </Container>
