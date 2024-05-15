@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>hoarder-workers</Name>
-  <Repository>ghcr.io/mohamedbassem/hoarder-workers:release</Repository>
+  <Repository>ghcr.io/mohamedbassem/hoarder-workers:latest</Repository>
   <Registry>https://github.com/mohamedbassem/hoarder-workers/pkgs/container/hoarder-workers</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
