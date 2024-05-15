@@ -10,7 +10,7 @@
   <Overview>A self-hostable bookmark-everything app with a touch of AI for the data hoarders out there.</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <Icon>https://raw.githubusercontent.com/Collectathon/icons/main/hoarder.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/main/icons/hoarder.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <Requires>redis&#xD;
 browserless&#xD;
