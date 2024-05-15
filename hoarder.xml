@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>hoarder</Name>
-  <Repository>ghcr.io/mohamedbassem/hoarder-web:release</Repository>
+  <Repository>ghcr.io/mohamedbassem/hoarder-web:latest</Repository>
   <Registry>https://github.com/mohamedbassem/hoarder-web/pkgs/container/hoarder-web</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
