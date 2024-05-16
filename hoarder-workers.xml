@@ -21,8 +21,7 @@ This is the worker. You will need the Hoarder app which is the server.</Overview
   <Config Name="Browser Address" Target="BROWSER_WEBSOCKET_URL" Default="" Mode="" Description="Browserless websocket URL" Type="Variable" Display="always" Required="false" Mask="false">ws://localhost:3000?token=</Config>
   <Config Name="Meilisearch Address (Optional)" Target="MEILI_ADDR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://localhost:7700</Config>
   <Config Name="Meilisearch Master Key (Optional)" Target="MEILI_MASTER_KEY" Default="masterkeymasterkeymasterkeymasterkey" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">masterkeymasterkeymasterkeymasterkey</Config>
-  <Config Name="Ollama Address (Optional)" Target="OLLAMA_BASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://localhost:11434</Config>
-  <Config Name="Ollama Text Model (Optional)" Target="INFERENCE_TEXT_MODEL" Default="gpt-3.5-turbo-0125" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">gpt-3.5-turbo-0125</Config>
+  <Config Name="OpenAI API Key" Target="OPENAI_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Internal Data Directory" Target="DATA_DIR" Default="/data" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">/data</Config>
   <Config Name="Connect On Demand" Target="BROWSER_CONNECT_ONDEMAND" Default="true" Mode="" Description="Flag for browserless" Type="Variable" Display="advanced" Required="true" Mask="false">true</Config>
 </Container>
