@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>hoarder</Name>
-  <Repository>ghcr.io/mohamedbassem/hoarder-web:latest</Repository>
-  <Registry>https://github.com/mohamedbassem/hoarder-web/pkgs/container/hoarder-web</Registry>
+  <Repository>ghcr.io/hoarder-app/hoarder-web</Repository>
+  <Registry>https://github.com/hoarder-app/hoarder/pkgs/container/hoarder-web</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/165108-support-collectathon-hoarder/</Support>
