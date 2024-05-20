@@ -18,7 +18,7 @@ meilisearch&#xD;
 hoarder-workers</Requires>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
   <Config Name="AppData" Target="/data" Default="/mnt/user/appdata/hoarder" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/hoarder</Config>
-  <Config Name="NextAuth Address" Target="NEXTAUTH_URL" Default="http://localhost:3000" Mode="" Description="Unraid IP or Container IP" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:3000</Config>
+  <Config Name="NextAuth Address" Target="NEXTAUTH_URL" Default="http://localhost:3000" Mode="" Description="Hoarder Address or URL" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:3000</Config>
   <Config Name="NextAuth Secret" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="Generate with openssl rand -base64 36" Type="Variable" Display="always" Required="true" Mask="true">secretkeysecretkeysecretkeysecretkey</Config>
   <Config Name="Redis Host" Target="REDIS_HOST" Default="redis" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">redis</Config>
   <Config Name="Redis Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
