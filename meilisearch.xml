@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>meilisearch</Name>
-  <Repository>getmeili/meilisearch:latest</Repository>
+  <Repository>getmeili/meilisearch:1.9.0</Repository>
   <Registry>https://registry.hub.docker.com/r/getmeili/meilisearch</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
