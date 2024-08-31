@@ -23,7 +23,6 @@ meilisearch</Requires>
   <Config Name="Meili Master Key (Optional)" Target="MEILI_MASTER_KEY" Default="" Mode="" Description="Meilisearch Address or URL" Type="Variable" Display="always" Required="false" Mask="true">masterkeymasterkeymasterkeymasterkey</Config>
   <Config Name="OpenAI API Key" Target="OPENAI_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Disable Signups" Target="DISABLE_SIGNUPS" Default="false|true" Mode="" Description="True = Signup Disabled" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
-  <Config Name="Max Asset Size" Target="MAX_ASSET_SIZE_MB" Default="4MB" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
   <Config Name="Internal Data Directory" Target="DATA_DIR" Default="/data" Mode="" Description="DO NOT CHANGE" Type="Variable" Display="advanced" Required="true" Mask="false">/data</Config>
   <Config Name="Connect On Demand" Target="BROWSER_CONNECT_ONDEMAND" Default="true" Mode="" Description="Flag for browserless" Type="Variable" Display="advanced" Required="true" Mask="false">true</Config>
 </Container>
