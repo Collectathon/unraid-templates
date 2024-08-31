@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>hoarder</Name>
   <Repository>ghcr.io/hoarder-app/hoarder:release</Repository>
-  <Registry>https://github.com/hoarder-app/hoarder/pkgs/container/hoarder-web</Registry>
+  <Registry>https://github.com/hoarder-app/hoarder/pkgs/container/hoarder</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/165108-support-collectathon-hoarder/</Support>
