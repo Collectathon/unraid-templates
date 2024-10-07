@@ -20,7 +20,7 @@ meilisearch</Requires>
   <Config Name="NextAuth Secret" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="Generate with openssl rand -base64 36" Type="Variable" Display="always" Required="true" Mask="true">secretkeysecretkeysecretkeysecretkey</Config>
   <Config Name="Browser Address" Target="BROWSER_WEBSOCKET_URL" Default="" Mode="" Description="Browserless websocket URL" Type="Variable" Display="always" Required="false" Mask="false">ws://localhost:3000?token=</Config>
   <Config Name="Meili Address (Optional)" Target="MEILI_ADDR" Default="http://localhost:7700" Mode="" Description="Meilisearch Address or URL" Type="Variable" Display="always" Required="false" Mask="false">http://localhost:7700</Config>
-  <Config Name="Meili Master Key (Optional)" Target="MEILI_MASTER_KEY" Default="" Mode="" Description="Meilisearch Address or URL" Type="Variable" Display="always" Required="false" Mask="true">masterkeymasterkeymasterkeymasterkey</Config>
+  <Config Name="Meili Master Key (Optional)" Target="MEILI_MASTER_KEY" Default="" Mode="" Description="Password required to query meilisearch" Type="Variable" Display="always" Required="false" Mask="true">masterkeymasterkeymasterkeymasterkey</Config>
   <Config Name="OpenAI API Key" Target="OPENAI_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Disable Signups" Target="DISABLE_SIGNUPS" Default="false|true" Mode="" Description="True = Signup Disabled" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="Internal Data Directory" Target="DATA_DIR" Default="/data" Mode="" Description="DO NOT CHANGE" Type="Variable" Display="advanced" Required="true" Mask="false">/data</Config>
