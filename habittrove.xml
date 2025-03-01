@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/dohsimpson/habittrove</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/187590-collectathon-habittrove/</Support>
+  <Support>https://forums.unraid.net/topic/187590-support-collectathon-habittrove/</Support>
   <Project>https://github.com/dohsimpson/HabitTrove</Project>
   <Overview>HabitTrove is a gamified habit tracking application that helps you build and maintain positive habits by rewarding you with coins, which you can use to exchange for rewards.</Overview>
   <Category>Productivity:</Category>
