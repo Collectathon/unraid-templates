@@ -13,6 +13,6 @@
   <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/refs/heads/main/icons/habittrove.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
-  <Config Name="AppData" Target="/data" Default="" Mode="rw" Description="AppData Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/habittrove</Config>
+  <Config Name="AppData" Target="/app/data" Default="" Mode="rw" Description="AppData Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/habittrove</Config>
   <Config Name="Auth Secret" Target="AUTH_SECRET" Default="" Mode="" Description="Generate with openssl rand -base64 36" Type="Variable" Display="always" Required="true" Mask="true"></Config>
 </Container>
