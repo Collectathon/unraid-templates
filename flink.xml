@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>flink</Name>
+  <Repository>quay.io/rtraceio/flink</Repository>
+  <Registry>https://quay.io/repository/rtraceio/flink</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/188068-support-collectathon-flink/</Support>
+  <Project>https://gitlab.com/rtraceio/web/flink</Project>
+  <Overview>Flink is a simple, Free, Libre, and Open Source URL Shortener built with love and a ASP.NET Core 8 Web API. Why yet another URL Shortener, you might ask yourself? Well, because flink has a unique feature set, and demands around scalabilty, simplicity, security and traceability that no other URL shortener was able to fullfil.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/refs/heads/main/icons/flink.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Database Type" Target="DBCONFIGURATION__DBTYPE" Default="sqlite" Mode="" Description="sqlite, postgres, or mysql" Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
+  <Config Name="Postgres DB Connection" Target="DBCONFIGURATION__POSTGRESCONNECTIONSTRING" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Server=localhost;Port=5432;Database=flink;User Id=flink;Password=flink;</Config>
+</Container>
