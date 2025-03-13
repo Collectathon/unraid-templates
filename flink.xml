@@ -16,4 +16,7 @@
   <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="Database Type" Target="DBCONFIGURATION__DBTYPE" Default="sqlite" Mode="" Description="sqlite, postgres, or mysql" Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
   <Config Name="Postgres DB Connection" Target="DBCONFIGURATION__POSTGRESCONNECTIONSTRING" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Server=localhost;Port=5432;Database=flink;User Id=flink;Password=flink;</Config>
+  <Config Name="Enable Metrics" Target="METRICSCONFIGURATION__ENABLEMETRICS" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Metrics Username" Target="METRICSCONFIGURATION__BASICAUTHUSERNAME" Default="flink" Mode="" Description="Username for metrics" Type="Variable" Display="always" Required="false" Mask="false">flink</Config>
+  <Config Name="Metrics Password" Target="METRICSCONFIGURATION__BASICAUTHPASSWORD" Default="flink" Mode="" Description="Password for metrics" Type="Variable" Display="always" Required="false" Mask="true">flink</Config>
 </Container>
