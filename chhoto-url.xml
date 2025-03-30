@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>chhoto-url</Name>
+  <Repository>sintan1729/chhoto-url:latest</Repository>
+  <Registry>https://hub.docker.com/r/sintan1729/chhoto-url</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/188672-support-collectathon-chhoto-url/</Support>
+  <Project>https://github.com/SinTan1729/chhoto-url</Project>
+  <Overview>A simple selfhosted URL shortener with no unnecessary features. Simplicity and speed are the main foci of this project. The docker image is ~6 MB (compressed), and it uses 5 MB of RAM under regular use.&#xD;
+&#xD;
+Setup:&#xD;
+mkdir /mnt/user/appdata/chhoto-url&#xD;
+touch /mnt/user/appdata/chhoto-url/urls.sqlite</Overview>
+  <Category>Cloud: Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:4567]</WebUI>
+  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/refs/heads/main/icons/chhoto-url.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Config Name="Port" Target="4567" Default="4567" Mode="tcp" Description="Web UI Pro" Type="Port" Display="always" Required="true" Mask="false">4567</Config>
+  <Config Name="Database" Target="/urls.sqlite" Default="/mnt/user/appdata/chhoto-url/urls.sqlite" Mode="rw" Description="Location of the URL database" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/chhoto-url/urls.sqlite</Config>
+  <Config Name="Password (Recommended)" Target="password" Default="" Mode="" Description="Password for Web UI" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="Base URL (Optional)" Target="site_url" Default="" Mode="" Description="Base URL" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="API Key (Optional)" Target="api_key" Default="" Mode="" Description="Activate JSON result mode" Type="Variable" Display="always" Required="false" Mask="true">masterkeymasterkeymasterkeymasterkey</Config>
+</Container>
