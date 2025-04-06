@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>hoarder</Name>
-  <Repository>ghcr.io/hoarder-app/hoarder:release</Repository>
-  <Registry>https://github.com/hoarder-app/hoarder/pkgs/container/hoarder</Registry>
+  <Name>karakeep</Name>
+  <Repository>ghcr.io/karakeep-app/karakeep:release</Repository>
+  <Registry>https://github.com/karakeep-app/karakeep/pkgs/container/karakeep</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/165108-support-collectathon-hoarder/</Support>
+  <Support>https://forums.unraid.net/topic/165108-support-collectathon-karakeep/</Support>
   <Project>https://github.com/hoarder-app/hoarder</Project>
   <Overview>A self-hostable bookmark-everything app with a touch of AI for the data hoarders out there.</Overview>
   <Category>Productivity:</Category>
@@ -15,8 +15,8 @@
   <Requires>browserless&#xD;
 meilisearch</Requires>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
-  <Config Name="AppData" Target="/data" Default="/mnt/user/appdata/hoarder" Mode="rw" Description="AppData Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/hoarder</Config>
-  <Config Name="NextAuth Address" Target="NEXTAUTH_URL" Default="http://localhost:3000" Mode="" Description="Hoarder Address or URL" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:3000</Config>
+  <Config Name="AppData" Target="/data" Default="/mnt/user/appdata/karakeep" Mode="rw" Description="AppData Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/karakeep</Config>
+  <Config Name="NextAuth Address" Target="NEXTAUTH_URL" Default="http://localhost:3000" Mode="" Description="Karakeep Address or URL" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:3000</Config>
   <Config Name="NextAuth Secret" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="Generate with openssl rand -base64 36" Type="Variable" Display="always" Required="true" Mask="true">secretkeysecretkeysecretkeysecretkey</Config>
   <Config Name="Browser Address" Target="BROWSER_WEBSOCKET_URL" Default="" Mode="" Description="Browserless websocket URL" Type="Variable" Display="always" Required="false" Mask="false">ws://localhost:3000?token=</Config>
   <Config Name="Meili Address (Optional)" Target="MEILI_ADDR" Default="http://localhost:7700" Mode="" Description="Meilisearch Address or URL" Type="Variable" Display="always" Required="false" Mask="false">http://localhost:7700</Config>
