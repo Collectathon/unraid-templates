@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>plant-it</Name>
+  <Repository>msdeluise/plant-it-server:latest</Repository>
+  <Registry>https://hub.docker.com/r/msdeluise/plant-it-server</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/189578-support-collectathon-plant-it/</Support>
+  <Project>https://docs.plant-it.org/latest</Project>
+  <Overview>Plant-it is a gardening companion app that helps you take care of your plants.&#xD;
+&#xD;
+It does not recommend you about which action to take, instead it is designed to logs the activity you are doing. This is on purpose, I strongly believe that the only one in charge of know when to water your plants, when to fertilize them, etc. is you (with the help of multiple online sources).&#xD;
+&#xD;
+Plant-it helps you remember the last time you did a treatment of your plants, which plants you have, collects photos of your plants, and notify you about time passed since last action on them.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/refs/heads/main/icons/plant-it.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <Requires>redis&#xD;
+mysql/mariadb</Requires>
+  <Config Name="Client Port" Target="3000" Default="3000" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Server Port" Target="8080" Default="8080" Mode="tcp" Description="API Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Upload Location" Target="/upload-dir" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MySQL Host" Target="MYSQL_HOST" Default="localhost" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">localhost</Config>
+  <Config Name="MySQL Port" Target="MYSQL_PORT" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="MySQL Username" Target="MYSQL_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MySQL Password" Target="MYSQL_PSW" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="MySQL Database" Target="MYSQL_DATABASE" Default="db" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">bootdb</Config>
+  <Config Name="MySQL Root Password" Target="MYSQL_ROOT_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="Redis TTL" Target="CACHE_TTL" Default="86400" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">86400</Config>
+  <Config Name="Redis Host" Target="CACHE_HOST" Default="localhost" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">localhost</Config>
+  <Config Name="Redis Port" Target="CACHE_PORT" Default="6379" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">6379</Config>
+  <Config Name="Redis Password" Target="CACHE_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="JWT Secret" Target="JWT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">masterkeymasterkeymasterkeymasterkey</Config>
+  <Config Name="JWT Expiration Time" Target="JWT_EXP" Default="1" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
+  <Config Name="User Limit" Target="USERS_LIMIT" Default="-1" Mode="" Description="-1 for unlimited users" Type="Variable" Display="always" Required="false" Mask="false">-1</Config>
+  <Config Name="Flora Codex Key" Target="FLORACODEX_KEY" Default="" Mode="" Description="Flora Codex API Key" Type="Variable" Display="always" Required="false" Mask="true">cqMBNslBgpVu0sp89Oe4nlA5fvD2PVGH8RnHn7YgrIsr-tYbD0peXD2EwPKqMbhw</Config>
+  <Config Name="Internal Upload Directory" Target="UPLOAD_DIR" Default="/upload-dir" Mode="" Description="DO NOT CHANGE" Type="Variable" Display="advanced" Required="true" Mask="false">/upload-dir</Config>
+  <Config Name="Allowed Origins" Target="ALLOWED_ORIGINS" Default="*" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">*</Config>
+  <Config Name="Log Level" Target="LOG_LEVEL" Default="DEBUG" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">DEBUG</Config>
+</Container>
