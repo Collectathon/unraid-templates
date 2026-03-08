@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>archipelago-server</Name>
+  <Repository>pommejedusor/archipelago_server:latest</Repository>
+  <Registry>https://hub.docker.com/r/pommejedusor/archipelago_server</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Project>https://archipelago.gg</Project>
+  <Overview>Archipelago multiworld randomizer server. Generate your Archipelago world using the client then place your generated AP_*.zip in the output folder and start the container.</Overview>
+  <Category>GameServers:</Category>
+  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/refs/heads/main/icons/archipelago.png</Icon>
+  <ExtraParams>--entrypoint /bin/sh</ExtraParams>
+  <PostArgs>-c 'set -- /archipelago/Archipelago/output/AP_*.zip; [ -e "$1" ] || { echo No AP_*.zip found; ls -la /archipelago/Archipelago/output; exit 1; }; exec /archipelago/Archipelago/ArchipelagoServer "$1"'</PostArgs>
+  <DateInstalled>1772967679</DateInstalled>
+  <Config Name="Server Port" Target="38281" Default="38281" Mode="tcp" Description="Archipelago server port" Type="Port" Display="always" Required="true" Mask="false">38281</Config>
+  <Config Name="Output Folder" Target="/archipelago/Archipelago/output" Default="/mnt/user/appdata/archipelago/output" Mode="rw" Description="Folder containing your AP_*.zip seed file" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/archipelago/output</Config>
+</Container>
