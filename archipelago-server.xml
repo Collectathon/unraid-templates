@@ -7,7 +7,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Project>https://archipelago.gg</Project>
-  <Overview>Archipelago multiworld randomizer server. Generate your Archipelago world using the client then place your generated AP_*.zip in the output folder and start the container.</Overview>
+  <Overview>Archipelago multiworld randomizer server. Generate your Archipelago world using the client then place your generated AP_*.zip in the output folder and start the container. This container will always use the latest *.zip file in the output folder.</Overview>
   <Category>GameServers:</Category>
   <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/refs/heads/main/icons/archipelago.png</Icon>
   <ExtraParams>--entrypoint /bin/sh</ExtraParams>
