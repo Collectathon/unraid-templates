@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>karakeep-chrome</Name>
+  <Repository>ghcr.io/karakeep-app/karakeep-chrome:release</Repository>
+  <Registry>https://github.com/karakeep-app/karakeep/pkgs/container/karakeep-chrome</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/165108-support-collectathon-karakeep/</Support>
+  <Project>https://github.com/karakeep-app/karakeep</Project>
+  <Overview>Headless Chrome for Karakeep. Runs Google Chrome stable (Debian Chromium on arm64) in Chrome's new headless mode, exposing the DevTools endpoint on port 9222 for Karakeep's archiving and screenshotting. Not meant to be reached directly from a browser.</Overview>
+  <Category>Productivity:</Category>
+  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/main/icons/karakeep.png</Icon>
+  <ExtraParams>--init --restart unless-stopped</ExtraParams>
+  <PostArgs>--disable-gpu --disable-dev-shm-usage --hide-scrollbars --disable-blink-features=AutomationControlled --window-size=1440,900</PostArgs>
+  <Config Name="Debug Port" Target="9222" Default="9222" Mode="tcp" Description="Chrome DevTools port. Karakeep connects here via BROWSER_WEB_URL (http://[UNRAID-IP]:9222)." Type="Port" Display="always" Required="true" Mask="false">9222</Config>
+  <Config Name="Chrome Version" Target="KARAKEEP_CHROME_VERSION" Default="release" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">release</Config>
+</Container>
