@@ -6,24 +6,23 @@
   <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/165108-support-collectathon-karakeep/</Support>
-  <Project>https://github.com/hoarder-app/hoarder</Project>
+  <Project>https://github.com/karakeep-app/karakeep</Project>
   <Overview>A self-hostable bookmark-everything app with a touch of AI for the data hoarders out there.</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/main/icons/hoarder.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Collectathon/unraid-templates/main/icons/karakeep.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
-  <Requires>browserless&#xD;
+  <Requires>karakeep-chrome&#xD;
 meilisearch</Requires>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
   <Config Name="AppData" Target="/data" Default="/mnt/user/appdata/karakeep" Mode="rw" Description="AppData Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/karakeep</Config>
   <Config Name="NextAuth Address" Target="NEXTAUTH_URL" Default="http://localhost:3000" Mode="" Description="Karakeep Address or URL" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:3000</Config>
   <Config Name="NextAuth Secret" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="Generate with openssl rand -base64 36" Type="Variable" Display="always" Required="true" Mask="true">secretkeysecretkeysecretkeysecretkey</Config>
-  <Config Name="Browser Address" Target="BROWSER_WEBSOCKET_URL" Default="" Mode="" Description="Browserless-v2 websocket URL" Type="Variable" Display="always" Required="false" Mask="false">ws://localhost:3000/chromium/playwright?token=</Config>
+  <Config Name="Browser Address" Target="BROWSER_WEB_URL" Default="" Mode="" Description="HTTP debugging address of the Karakeep Chrome container" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:9222</Config>
   <Config Name="Meili Address (Optional)" Target="MEILI_ADDR" Default="http://localhost:7700" Mode="" Description="Meilisearch Address or URL" Type="Variable" Display="always" Required="false" Mask="false">http://localhost:7700</Config>
   <Config Name="Meili Master Key (Optional)" Target="MEILI_MASTER_KEY" Default="" Mode="" Description="Password required to query meilisearch" Type="Variable" Display="always" Required="false" Mask="true">masterkeymasterkeymasterkeymasterkey</Config>
   <Config Name="OpenAI API Key" Target="OPENAI_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Disable Signups" Target="DISABLE_SIGNUPS" Default="false|true" Mode="" Description="True = Signup Disabled" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="Internal Data Directory" Target="DATA_DIR" Default="/data" Mode="" Description="DO NOT CHANGE" Type="Variable" Display="advanced" Required="true" Mask="false">/data</Config>
-  <Config Name="Connect On Demand" Target="BROWSER_CONNECT_ONDEMAND" Default="true" Mode="" Description="Flag for browserless" Type="Variable" Display="advanced" Required="true" Mask="false">true</Config>
 </Container>
 
